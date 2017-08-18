@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="JS/jquery-3.2.1.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -23,6 +26,8 @@
                 <div class="col-md-4 column">
                     <img alt="200x68" src="Image/second-home.jpg" />
                 </div>
+                <div class="col-md-6 column">
+                </div>
                 <div class="col-md-2 column">
                 </div>
             </div>
@@ -31,10 +36,33 @@
                     Home
                 </li>
                 <li>
-                    <a href="quiz.html">Quiz</a>
+                    <a href="visualization.html">
+                        Visualization
+                    </a>
                 </li>
                 <li>
-                    <a href="visualization.html">Data Visulization</a>
+                    <a id="modal-137380" href="#modal-container-137380" data-toggle="modal">Quiz</a>
+                    <div class="modal fade" id="modal-container-137380" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="modal-title" id="myModalLabel">
+                                        Declaration
+                                    </h4>
+                                </div>
+                                <div class="modal-body">
+                                    This quiz just for the user to identify the kids who may facing the problem becoming homelessness.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary" onClick = "window.location.href=('quiz.html')">Yes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="btn btn-primary btn-large" href="visualization.html">Report</a>
                 </li>
             </ul>
             <div class="carousel slide" id="carousel-649056">
@@ -53,11 +81,12 @@
                             <h1>
                                 Don't let these kids go
                             </h1>
+                            <h4>
+                                On any given night in Australia 1 in 200 people are homeless.
+                                There are 17,845 children under 10, with 402 children sleeping out.
+                            </h4>
                             <p>
-                                This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-                            </p>
-                            <p>
-                                <a class="btn btn-primary btn-large" href="visualization.html">Learn more</a>
+                                <a class="btn btn-primary btn-large" href="http://www.homelessnessaustralia.org.au">Learn more</a>
                             </p>
                         </div>
                     </div>
@@ -83,11 +112,26 @@
             </div>
         </div>
     </div>
-    <div>
-        <p>
-        <p>
-        </p>
-        </p>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-2 column">
+            </div>
+            <div class="col-md-2 column">
+            </div>
+            <div class="col-md-2 column">
+            </div>
+            <div class="col-md-2 column">
+            </div>
+            <div class="col-md-2 column">
+            </div>
+            <div class="col-md-2 column">
+                <span class="label label-default"> ©Team Y-Nots</span>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="https://www.instagram.com/yangdeng_/" class="fa fa-instagram"></a>
+            </div>
+        </div>
     </div>
     <div>
         <p>
