@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="JS/jquery-3.2.1.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="JS/Chart.js"></script>
 </head>
 <body>
 
@@ -42,15 +43,28 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <h4 class="modal-title" id="myModalLabel">
-                                        标题
-                                    </h4>
+                                    <h2 class="modal-title" id="myModalLabel">
+                                        Declaration
+                                    </h2>
                                 </div>
                                 <div class="modal-body">
-                                    内容...
+                                    <ul>
+                                        <li>
+                                            This quiz is design for the user to identify the kids who will experience homelessness.
+                                        </li>
+                                        <li>
+                                            Your answer will be recorded and analyzed.
+                                        </li>
+                                        <li>
+                                            We also ensure that your privacy will not be leaked.
+                                        </li>
+                                        <li>
+                                            Once your answers uploaded is identified as high-risk target, we will give you the opportunity to report this situation.
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button> <button type="button" class="btn btn-primary" onClick = "window.location.href=('quiz.html')">Yes,I Kown</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary" onClick = "window.location.href=('quiz.html')">Yes, I know it</button>
                                 </div>
                             </div>
                         </div>
@@ -78,74 +92,27 @@
             </div>
         </div>
         <div class="row clearfix">
-            <div class="col-md-2 column">
-            </div>
-            <div class="col-md-8 column">
-                <meta charset="utf-8">
-                <style>
-
-                    .bar rect {
-                        fill: steelblue;
-                    }
-
-                    .bar text {
-                        fill: #fff;
-                        font: 10px sans-serif;
-                    }
-
-                </style>
-                <svg width="800" height="500"></svg>
-                <script src="https://d3js.org/d3.v4.min.js"></script>
+            <div class="col-md-12 column">
+                <canvas id="radarChart" width="1000" height="600"></canvas>
                 <script>
-
-                    var data = d3.range(1000).map(d3.randomBates(10));
-
-                    var formatCount = d3.format(",.0f");
-
-                    var svg = d3.select("svg"),
-                        margin = {top: 10, right: 30, bottom: 30, left: 30},
-                        width = +svg.attr("width") - margin.left - margin.right,
-                        height = +svg.attr("height") - margin.top - margin.bottom,
-                        g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-                    var x = d3.scaleLinear()
-                        .rangeRound([0, width]);
-
-                    var bins = d3.histogram()
-                        .domain(x.domain())
-                        .thresholds(x.ticks(20))
-                        (data);
-
-                    var y = d3.scaleLinear()
-                        .domain([0, d3.max(bins, function(d) { return d.length; })])
-                        .range([height, 0]);
-
-                    var bar = g.selectAll(".bar")
-                        .data(bins)
-                        .enter().append("g")
-                        .attr("class", "bar")
-                        .attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.length) + ")"; });
-
-                    bar.append("rect")
-                        .attr("x", 1)
-                        .attr("width", x(bins[0].x1) - x(bins[0].x0) - 1)
-                        .attr("height", function(d) { return height - y(d.length); });
-
-                    bar.append("text")
-                        .attr("dy", ".75em")
-                        .attr("y", 6)
-                        .attr("x", (x(bins[0].x1) - x(bins[0].x0)) / 2)
-                        .attr("text-anchor", "middle")
-                        .text(function(d) { return formatCount(d.length); });
-
-                    g.append("g")
-                        .attr("class", "axis axis--x")
-                        .attr("transform", "translate(0," + height + ")")
-                        .call(d3.axisBottom(x));
-
+                    var ctx = document.getElementById("radarChart").getContext('2d');
+                    var marksData = {
+                        labels: ["English", "Maths", "Physics", "Chemistry", "Biology", "History"],
+                        datasets: [{
+                            label: "Student A",
+                            backgroundColor: "rgba(200,0,0,0.2)",
+                            data: [65, 75, 70, 80, 60, 80]
+                        }, {
+                            label: "Student B",
+                            backgroundColor: "rgba(0,0,200,0.2)",
+                            data: [54, 65, 60, 70, 70, 75]
+                        }]
+                    };
+                    var radarChart = new Chart(ctx, {
+                        type: 'radar',
+                        data: marksData
+                    });
                 </script>
-            </div>
-            <div class="col-md-2 column">
             </div>
         </div>
         <div>
