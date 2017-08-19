@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dc95ff2-45d8-406f-ac12-a55a3c21fa12" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/Chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/visualization4.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/bootstrap-toggle.min.js" afterPath="$PROJECT_DIR$/JS/bootstrap-toggle.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visualization.html" afterPath="$PROJECT_DIR$/visualization.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visualization2.html" afterPath="$PROJECT_DIR$/visualization2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visualization3.html" afterPath="$PROJECT_DIR$/visualization3.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,12 +18,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1179">
-              <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+            <state relative-caret-position="204">
+              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visualization4.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/visualization4.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="86" column="80" lean-forward="false" selection-start-line="86" selection-start-column="80" selection-end-line="86" selection-end-column="80" />
+              <folding>
+                <element signature="n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,8 +75,8 @@
       <file leaf-file-name="visualization.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/visualization.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="98" column="24" lean-forward="false" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
+            <state relative-caret-position="1245">
+              <caret line="98" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="7" />
               <folding>
                 <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -92,22 +100,10 @@
       <file leaf-file-name="visualization3.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/visualization3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="96" column="24" lean-forward="true" selection-start-line="96" selection-start-column="24" selection-end-line="96" selection-end-column="24" />
+            <state relative-caret-position="395">
+              <caret line="86" column="120" lean-forward="false" selection-start-line="86" selection-start-column="120" selection-end-line="86" selection-end-column="120" />
               <folding>
                 <element signature="n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-3.2.1.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/jquery-3.2.1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,10 +119,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quiz.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="quiz.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/quiz.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="179">
               <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding>
                 <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -163,6 +159,7 @@
         <option value="$PROJECT_DIR$/visualization.html" />
         <option value="$PROJECT_DIR$/visualization2.html" />
         <option value="$PROJECT_DIR$/visualization3.html" />
+        <option value="$PROJECT_DIR$/visualization4.html" />
       </list>
     </option>
   </component>
@@ -180,8 +177,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="211" />
-    <option name="y" value="64" />
+    <option name="x" value="217" />
+    <option name="y" value="35" />
     <option name="width" value="1088" />
     <option name="height" value="714" />
   </component>
@@ -275,15 +272,15 @@
       <workItem from="1502939643235" duration="7475000" />
       <workItem from="1503033413566" duration="7823000" />
       <workItem from="1503053134231" duration="3750000" />
-      <workItem from="1503109226293" duration="8014000" />
+      <workItem from="1503109226293" duration="8919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45185000" />
+    <option name="totallyTimeSpent" value="46090000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="211" y="64" width="1088" height="714" extended-state="0" />
+    <frame x="217" y="35" width="1088" height="714" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21691176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -318,14 +315,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Data/HomelessReason.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3795">
-          <caret line="253" column="0" lean-forward="false" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Image/youth2.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -626,33 +615,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quiz.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding>
-            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JS/bootstrap-toggle.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="360" lean-forward="false" selection-start-line="7" selection-start-column="360" selection-end-line="7" selection-end-column="360" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visualization.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="98" column="24" lean-forward="false" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -667,10 +635,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/visualization.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="98" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="7" />
+          <folding>
+            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/visualization3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="96" column="24" lean-forward="true" selection-start-line="96" selection-start-column="24" selection-end-line="96" selection-end-column="24" />
+        <state relative-caret-position="395">
+          <caret line="86" column="120" lean-forward="false" selection-start-line="86" selection-start-column="120" selection-end-line="86" selection-end-column="120" />
+          <folding>
+            <element signature="n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualization4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="86" column="80" lean-forward="false" selection-start-line="86" selection-start-column="80" selection-end-line="86" selection-end-column="80" />
           <folding>
             <element signature="n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -679,9 +668,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1179">
-          <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+        <state relative-caret-position="204">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
