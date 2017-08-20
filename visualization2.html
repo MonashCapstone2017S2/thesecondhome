@@ -71,7 +71,7 @@
                     </div>
                 </li>
                 <li>
-                    <a class="btn btn-primary btn-large" href="visualization.html">Report</a>
+                    <a class="btn btn-primary btn-large" disabled>Report(coming soon)</a>
                 </li>
             </ul>
         </div>
@@ -81,7 +81,7 @@
             <div class="col-md-2 column">
             </div>
             <div class="col-md-2 column">
-                <button type="button" class="btn btn-default btn-block" onClick = "window.location.href=('visualization.html')">Previous</button>
+                <button type="button" class="btn btn-default btn-block" onClick = "window.location.href=('visualization1.html')">Previous</button>
             </div>
             <div class="col-md-2 column">
                 <button type="button" class="btn btn-default btn-block" onClick = "window.location.href=('visualization3.html')">Next</button>
@@ -92,14 +92,16 @@
             </div>
         </div>
         <div class="row clearfix">
-            <div class="col-md-12 column">
-                <canvas id="polarAreaChart" width="1000" height="600"></canvas>
+            <div class="col-md-1 column">
+            </div>
+            <div class="col-md-10 column">
+                <canvas id="polarAreaChart" width="1000" height="700"></canvas>
                 <script>
                     var ctx = document.getElementById("polarAreaChart").getContext('2d');
                     var birdsData = {
-                        labels: ["Total Homelessness", "Children under 10", "Children sleeping out"],
+                        labels: ["Total Homelessness", "Children under 18", "Children under 12", "Children under 10", "Children sleeping out"],
                         datasets: [{
-                            data: [105237, 17845, 402],
+                            data: [105237, 28414, 17845, 16838, 402],
                             backgroundColor: [
                                 "rgba(255, 0, 0, 0.6)",
                                 "rgba(0, 255,200, 0.6)",
@@ -127,6 +129,8 @@
                     });
                 </script>
             </div>
+            <div class="col-md-1 column">
+            </div>
         </div>
         <div>
             <p>
@@ -138,7 +142,7 @@
         </div>
         <div class="jumbotron well">
             <p>
-                This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+                Despite popular belief, children are one of the largest groups of Australians experiencing homelessness.
             </p>
         </div>
     </div>

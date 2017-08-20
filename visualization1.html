@@ -15,8 +15,8 @@
     <div class="row clearfix">
         <div>
             <p>
-                <p>
-                </p>
+            <p>
+            </p>
             </p>
         </div>
         <div class="col-md-12 column">
@@ -81,10 +81,10 @@
             <div class="col-md-2 column">
             </div>
             <div class="col-md-2 column">
-                <button type="button" class="btn btn-default btn-block disabled">Previous</button>
+                <button type="button" class="btn btn-default btn-block" onClick = "window.location.href=('visualization.html')">Previous</button>
             </div>
             <div class="col-md-2 column">
-                <button type="button" class="btn btn-default btn-block" onClick = "window.location.href=('visualization1.html')">Next</button>
+                <button type="button" class="btn btn-default btn-block" onClick = "window.location.href=('visualization2.html')">Next</button>
             </div>
             <div class="col-md-2 column">
             </div>
@@ -95,54 +95,60 @@
             <div class="col-md-1 column">
             </div>
             <div class="col-md-10 column">
-                <canvas id="myChart" width="1000" height="700"></canvas>
+                <canvas id="donutChart" width="1000" height="700"></canvas>
                 <script>
-                    var ctx = document.getElementById("myChart").getContext('2d');
-                    var myChart = new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-                            labels: ["Domestic Violence", "Financial Difficulties", "Housing Crisis", "Inappropriate Dwellings", "Relationship Issues", "Accommodation Issues", "Health Issues", "Custody Transition", "Itinerant", "Lack of support", "Other"],
-                            datasets: [{
-                                label: '# Total 105237 Homelessness',
-                                data: [25257, 21047, 16838, 11576, 8419, 5262, 4209, 2105, 1052, 1052, 8419],
+                    var oilCanvas = document.getElementById("donutChart");
+
+                    Chart.defaults.global.defaultFontFamily = "Lato";
+                    Chart.defaults.global.defaultFontSize = 18;
+
+                    var oilData = {
+                        labels: [
+                            "ACT",
+                            "NSW",
+                            "NT",
+                            "QLD",
+                            "SA",
+                            "TAS",
+                            "VIC",
+                            "WA"
+                        ],
+                        datasets: [
+                            {
+                                data: [1758, 28191, 15479, 19831, 5985, 1579, 22773, 9595],
                                 backgroundColor: [
-                                    'rgba(255, 99, 132, 0.2)',
-                                    'rgba(54, 162, 235, 0.2)',
-                                    'rgba(255, 206, 86, 0.2)',
-                                    'rgba(75, 192, 192, 0.2)',
-                                    'rgba(153, 102, 255, 0.2)',
-                                    'rgba(255, 159, 64, 0.2)',
-                                    'rgba(255, 99, 132, 0.2)',
-                                    'rgba(54, 162, 235, 0.2)',
-                                    'rgba(255, 206, 86, 0.2)',
-                                    'rgba(75, 192, 192, 0.2)',
-                                    'rgba(153, 102, 255, 0.2)'
+                                    "#FF6384",
+                                    "#63FF84",
+                                    "#40beff",
+                                    "#c034ff",
+                                    "#6384FF",
+                                    "#ffbe4f",
+                                    "#ff24a7",
+                                    "#8463FF",
+                                    "#ff2e2c"
                                 ],
-                                borderColor: [
-                                    'rgba(255,99,132,1)',
-                                    'rgba(54, 162, 235, 1)',
-                                    'rgba(255, 206, 86, 1)',
-                                    'rgba(75, 192, 192, 1)',
-                                    'rgba(153, 102, 255, 1)',
-                                    'rgba(255, 159, 64, 1)' ,
-                                    'rgba(255, 99, 132, 1)',
-                                    'rgba(54, 162, 235, 1)',
-                                    'rgba(255, 206, 86, 1)',
-                                    'rgba(75, 192, 192, 1)',
-                                    'rgba(153, 102, 255, 1)'
-                                ],
-                                borderWidth: 4
+                                borderColor: "white",
+                                borderWidth: 1
                             }]
+                    };
+
+                    var chartOptions = {
+                        rotation: -Math.PI,
+                        cutoutPercentage: 30,
+                        circumference: Math.PI,
+                        legend: {
+                            position: 'top'
                         },
-                        options: {
-                            scales: {
-                                yAxes: [{
-                                    ticks: {
-                                        beginAtZero:true
-                                    }
-                                }]
-                            }
+                        animation: {
+                            animateRotate: false,
+                            animateScale: true
                         }
+                    };
+
+                    var pieChart = new Chart(oilCanvas, {
+                        type: 'doughnut',
+                        data: oilData,
+                        options: chartOptions
                     });
                 </script>
             </div>
@@ -159,7 +165,7 @@
         </div>
         <div class="jumbotron well">
             <p>
-                This diagram shows the total number of australia homeless and its structural proportion of different causes.
+                This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
             </p>
         </div>
     </div>
