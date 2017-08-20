@@ -92,7 +92,7 @@
             </div>
         </div>
         <div class="row clearfix">
-            <div class="col-md-12 column">
+            <div class="col-md-6 column">
                 <canvas id="myChart" width="1000" height="600"></canvas>
                 <script>
                     var ctx = document.getElementById("myChart").getContext('2d');
@@ -144,6 +144,41 @@
                     });
                 </script>
             </div>
+            <div class="col-md-6 column">
+                <canvas id="polarAreaChart" width="1000" height="600"></canvas>
+                <script>
+                    var ctx = document.getElementById("polarAreaChart").getContext('2d');
+                    var birdsData = {
+                        labels: ["Total Homeless", "Summer", "Fall", "Winter"],
+                        datasets: [{
+                            data: [1200, 1700, 800, 200],
+                            backgroundColor: [
+                                "rgba(255, 0, 0, 0.6)",
+                                "rgba(0, 255,200, 0.6)",
+                                "rgba(200, 0, 200, 0.6)",
+                                "rgba(0, 255, 0, 0.6)"
+                            ],
+                            borderColor: "rgba(0, 0, 0, 0.8)"
+                        }]
+                    };
+
+                    var chartOptions = {
+                        startAngle: -Math.PI / 4,
+                        legend: {
+                            position: 'top'
+                        },
+                        animation: {
+                            animateRotate: true
+                        }
+                    };
+
+                    var polarAreaChart = new Chart(ctx, {
+                        type: 'polarArea',
+                        data: birdsData,
+                        options: chartOptions
+                    });
+                </script>
+            </div>
         </div>
         <div>
             <p>
@@ -155,7 +190,7 @@
         </div>
         <div class="jumbotron well">
             <p>
-                This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+                This diagram shows the total number of australia homeless and its structural proportion of different causes.
             </p>
         </div>
     </div>
