@@ -32,13 +32,16 @@
                     <a href="../index.html">Home</a>
                 </li>
                 <li>
+                    <a href="facts.html">Facts</a>
+                </li>
+                <li>
                     <a href="visualization.html">Visualization</a>
                 </li>
                 <li class="active" >
                     Quiz
                 </li>
                 <li>
-                    <a class="btn btn-primary btn-large" disabled="">Report(coming soon)</a>
+                    <a href="about.html">About</a>
                 </li>
             </ul>
             <div class="row clearfix">
@@ -46,9 +49,27 @@
                 <div id="surveyResult"></div>
                 <script src="../JS/quiz.js"></script>
             </div>
+            <div id="alert-sad" hidden>
+                <div id="alert1">
+                    <div id="alert-content1">
+                        <img class="emoji" src="../Image/sad.png">
+                        <p>Looks like the child needs help</p>
+                    </div>
+                    <button type="button" class="btn btn-primary" onClick = "window.location.href=('../index.html')">OK</button>
+                </div>
+            </div>
+            <div id="alert-happy" hidden>
+                <div id="alert2">
+                    <div id="alert-content2">
+                        <img class="emoji" src="../Image/happy.png">
+                        <p>No reason to be concerned</p>
+                    </div>
+                    <button type="button" class="btn btn-primary" onClick = "window.location.href=('../index.html')">OK</button>
+                </div>
+            </div>
             <div class="jumbotron well">
                 <p>
-                    This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+                    Check to know if a kid is vulnerable
                 </p>
             </div>
         </div>
