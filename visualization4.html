@@ -81,10 +81,10 @@
             <div class="col-md-2 column">
             </div>
             <div class="col-md-2 column">
-                <button type="button" class="btn btn-default btn-block" onClick = "window.location.href=('visualization1.html')">Previous</button>
+                <button type="button" class="btn btn-default btn-block" onClick = "window.location.href=('visualization3.html')">Previous</button>
             </div>
             <div class="col-md-2 column">
-                <button type="button" class="btn btn-default btn-block" onClick = "window.location.href=('visualization3.html')">Next</button>
+                <button type="button" class="btn btn-default btn-block" disabled>Next</button>
             </div>
             <div class="col-md-2 column">
             </div>
@@ -95,39 +95,26 @@
             <div class="col-md-1 column">
             </div>
             <div class="col-md-10 column">
-                <canvas id="polarAreaChart" width="1000" height="700"></canvas>
+                <canvas id="radarChart" width="1000" height="700"></canvas>
                 <script>
-                    var ctx = document.getElementById("polarAreaChart").getContext('2d');
+                    var ctx = document.getElementById("radarChart").getContext('2d');
                     Chart.defaults.global.defaultFontFamily = "Lato";
                     Chart.defaults.global.defaultFontSize = 12;
-                    var birdsData = {
-                        labels: ["Total Homelessness", "Children under 18", "Children under 12", "Children under 10", "Children sleeping out"],
+                    var marksData = {
+                        labels: ["Emotion Isolation", "Establishing and Maintaining Friendships", "Discrimination in the schoolyard", "Suffering an amount fo stress", "Reduced concentration skills", "Academic and learning delays", "Absenteeism", "Dropout"],
                         datasets: [{
-                            data: [105237, 28414, 17845, 16838, 402],
-                            backgroundColor: [
-                                "rgba(255, 0, 0, 0.6)",
-                                "rgba(0, 255,200, 0.6)",
-                                "rgba(200, 0, 200, 0.6)",
-                                "rgba(0, 255, 0, 0.6)"
-                            ],
-                            borderColor: "rgba(0, 0, 0, 0.8)"
+                            label: "Education Condition of Normal Children",
+                            backgroundColor: "rgba(200,0,0,0.2)",
+                            data: [75, 80, 80, 80, 90, 70, 80, 90]
+                        }, {
+                            label: "Education Condition of Children Experiencing Homelessness",
+                            backgroundColor: "rgba(0,0,200,0.2)",
+                            data: [55, 70, 75, 75, 70, 70, 70, 40]
                         }]
                     };
-
-                    var chartOptions = {
-                        startAngle: -Math.PI / 4,
-                        legend: {
-                            position: 'top'
-                        },
-                        animation: {
-                            animateRotate: true
-                        }
-                    };
-
-                    var polarAreaChart = new Chart(ctx, {
-                        type: 'polarArea',
-                        data: birdsData,
-                        options: chartOptions
+                    var radarChart = new Chart(ctx, {
+                        type: 'radar',
+                        data: marksData
                     });
                 </script>
             </div>
@@ -144,10 +131,8 @@
         </div>
         <div class="jumbotron well">
             <p>
-                Despite popular belief, children are one of the largest groups of Australians experiencing homelessness.
-                In fact, children under the age of 18 make up 27% of people experiencing homelessness.
-                And this figure is likely to be an undercount due to the limitations of the Census as a vehicle for capturing
-                people aged 12-18 who are staying temporarily with friends and relatives.
+                Homelessness in children has been found to restrict children’s access to and participation in school.
+                Due to the transience of homeless families, children often end up attending a number of schools.
             </p>
         </div>
     </div>

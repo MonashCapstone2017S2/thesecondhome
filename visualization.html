@@ -98,6 +98,8 @@
                 <canvas id="myChart" width="1000" height="700"></canvas>
                 <script>
                     var ctx = document.getElementById("myChart").getContext('2d');
+                    Chart.defaults.global.defaultFontFamily = "Lato";
+                    Chart.defaults.global.defaultFontSize = 12;
                     var myChart = new Chart(ctx, {
                         type: 'bar',
                         data: {
@@ -159,7 +161,7 @@
         </div>
         <div class="jumbotron well">
             <p>
-                This diagram shows the total number of australia homeless and its structural proportion of different causes.
+                This diagram shows the total number of australia homeless and its structural proportion of different causes. 105237 Homelessness totally in australia and we can found that the top three causes are Domestic Violence, Financial Difficulties and Housing Crisis.
             </p>
         </div>
     </div>

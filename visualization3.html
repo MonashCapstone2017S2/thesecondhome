@@ -84,7 +84,7 @@
                 <button type="button" class="btn btn-default btn-block" onClick = "window.location.href=('visualization2.html')">Previous</button>
             </div>
             <div class="col-md-2 column">
-                <button type="button" class="btn btn-default btn-block" disabled>Next</button>
+                <button type="button" class="btn btn-default btn-block" onClick = "window.location.href=('visualization4.html')">Next</button>
             </div>
             <div class="col-md-2 column">
             </div>
@@ -98,6 +98,8 @@
                 <canvas id="radarChart" width="1000" height="700"></canvas>
                 <script>
                     var ctx = document.getElementById("radarChart").getContext('2d');
+                    Chart.defaults.global.defaultFontFamily = "Lato";
+                    Chart.defaults.global.defaultFontSize = 12;
                     var marksData = {
                         labels: ["Developmental Delays", "Nutritional Deficits", "Asthma", "Infectious Illness", "Gastrointestinal Problems", "Anxiety and depression"],
                         datasets: [{
@@ -129,7 +131,9 @@
         </div>
         <div class="jumbotron well">
             <p>
-                This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+                Experiencing homelessness has an impact on both the physical and mental health of children.
+                In addition, children who are experiencing homelessness have been found to have less access to health services due to increased mobility, lack of transport and financial difficulties.
+                Immunisation among children who are experiencing homelessness is low and leads to increased risk of infectious diseases.
             </p>
         </div>
     </div>
