@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Second Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../JS/jquery-3.2.1.js"></script>
+    <script src="../JS/survey.jquery.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/ProgressSteps.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/quiz.css">
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <br>
+        <div class="col-md-2 column">
+            <img alt="200x68" src="../Image/second-home.jpg" />
+        </div>
+        <div class="col-md-1 column">
+        </div>
+        <div class="col-md-9 column">
+            <br>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="../index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="FactsGrid.html">
+                        Facts
+                    </a>
+                </li>
+                <li class="active">
+                    Quiz
+                </li>
+                <li>
+                    <a href="About.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="row bs-wizard" style="border-bottom:0;">
+
+            <div class="col-xs-3 bs-wizard-step complete">
+                <div class="text-center bs-wizard-stepnum">Start</div>
+                <div class="progress"><div class="progress-bar"></div></div>
+                <a href="FactsGrid.html" class="bs-wizard-dot"></a>
+                <div class="bs-wizard-info text-center"></div>
+            </div>
+
+            <div class="col-xs-3 bs-wizard-step complete"><!-- complete -->
+                <div class="text-center bs-wizard-stepnum">Facts</div>
+                <div class="progress"><div class="progress-bar"></div></div>
+                <a href="#" class="bs-wizard-dot"></a>
+                <div class="bs-wizard-info text-center"></div>
+            </div>
+
+            <div class="col-xs-3 bs-wizard-step disabled"><!-- complete -->
+                <div class="text-center bs-wizard-stepnum">Quiz</div>
+                <div class="progress"><div class="progress-bar"></div></div>
+                <a href="#" class="bs-wizard-dot"></a>
+                <div class="bs-wizard-info text-center"></div>
+            </div>
+
+            <div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
+                <div class="text-center bs-wizard-stepnum">Report</div>
+                <div class="progress"><div class="progress-bar"></div></div>
+                <a href="#" class="bs-wizard-dot"></a>
+                <div class="bs-wizard-info text-center"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div id="surveyElement"></div>
+        <div id="surveyResult"></div>
+        <script src="../JS/quiz.js"></script>
+    </div>
+    <div id="alert-sad" hidden>
+        <div id="alert1">
+            <div id="alert-content1">
+                <img class="emoji" src="../Image/sad.png">
+                <p>Looks like the child needs help</p>
+            </div>
+            <button type="button" class="btn btn-primary" onClick = "window.location.href=('../index.html')">OK</button>
+        </div>
+    </div>
+    <div id="alert-happy" hidden>
+        <div id="alert2">
+            <div id="alert-content2">
+                <img class="emoji" src="../Image/happy.png">
+                <p>No reason to be concerned</p>
+            </div>
+            <button type="button" class="btn btn-primary" onClick = "window.location.href=('../index.html')">OK</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
