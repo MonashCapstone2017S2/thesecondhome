@@ -13,8 +13,7 @@ window.survey = new Survey.Model( { questions: [
     { type: "dropdown", name: "SocialEvents", title: "Does the child participate in community or church activities?", isRequired: false, colCount: 0,
         choices: ["Never", "Occasionally", "Frequently", "Not Sure"] },
     { type: "rating", name: "Emotion", title: "What do you think of the child's daily emotion?",
-        mininumRateDescription: "Depressed", maximumRateDescription: "Optimistic" },
-    { type: "comment", name: "SpecialSituation", title:"Have you noticed some special situation for this kids?(For Example: Domestic Violence)" }
+        mininumRateDescription: "Depressed", maximumRateDescription: "Optimistic" }
 ]});
 survey.onComplete.add(function(result) {
 
