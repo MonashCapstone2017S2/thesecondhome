@@ -4,33 +4,65 @@
     <title>The Second Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/ProgressSteps.css">
     <script src="JS/jquery-3.2.1.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="CSS/bootstrap-toggle.min.css" rel="stylesheet">
-    <script src="JS/bootstrap-toggle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/font-awesome.css">
+    <style>
+        @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+        hr {
+            height: 4px;
+            margin-left: 15px;
+            margin-bottom:-3px;
+        }
+        .hr-warning{
+            background-image: -webkit-linear-gradient(left, rgba(210,105,30,.8), rgba(210,105,30,.6), rgba(0,0,0,0));
+        }
+        .hr-success{
+            background-image: -webkit-linear-gradient(left, rgba(15,157,88,.8), rgba(15, 157, 88,.6), rgba(0,0,0,0));
+        }
+        .hr-primary{
+            background-image: -webkit-linear-gradient(left, rgba(66,133,244,.8), rgba(66, 133, 244,.6), rgba(0,0,0,0));
+        }
+        .hr-danger{
+            background-image: -webkit-linear-gradient(left, rgba(244,67,54,.8), rgba(244,67,54,.6), rgba(0,0,0,0));
+        }
+
+        .breadcrumb {
+            background: rgba(245, 245, 245, 0);
+            border: 0px solid rgba(245, 245, 245, 1);
+            border-radius: 25px;
+            display: block;
+        }
+
+        .btn-bread{
+            margin-top:10px;
+            font-size: 12px;
+
+            border-radius: 3px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="row clearfix">
-            <br>
             <div class="col-md-2 column">
+                <br>
+                <br>
                 <img alt="200x68" src="Image/second-home.jpg" />
             </div>
-            <div class="col-md-1 column">
-            </div>
-            <div class="col-md-9 column">
+            <div class="col-md-4 column">
+                <br>
+                <br>
                 <br>
                 <ul class="breadcrumb">
                         <li class="active">
+                            <i class="fa fa-home" aria-hidden="true"></i>
                             Home
                         </li>
                         <li>
-                            <a href="Views/FactsGrid.html">
-                                Facts
-                            </a>
+                            <a href="Views/FactsGrid.html">Facts</a>
                         </li>
                         <li>
                             <a id="modal-137380" href="#modal-container-137380" data-toggle="modal">Quiz</a>
@@ -69,42 +101,54 @@
                         <li>
                             <a href="Views/About.html">About</a>
                         </li>
+                        <li>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="https://github.com/MonashIE2017S2/thesecondhome" class="fa fa-github"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                        </li>
                     </ul>
+            </div>
+            <div class="col-md-6 column">
+                <br>
+                <br>
+                <br>
+                <img alt="140x140" src="Image/youthhead.jpg" width="400" height="60"/>
             </div>
         </div>
         <div class="row clearfix">
-            <div class="row bs-wizard" style="border-bottom:0;">
-
-                <div class="col-xs-3 bs-wizard-step active">
-                    <div class="text-center bs-wizard-stepnum">Start</div>
-                    <div class="progress"><div class="progress-bar"></div></div>
-                    <a href="Views/FactsGrid.html" class="bs-wizard-dot"></a>
-                    <div class="bs-wizard-info text-center"></div>
+            <div class="col-md-2 column">
+                <br>
+                <br>
+                <div class="row">
+                    <hr class="hr-primary" />
+                    <ol class="breadcrumb bread-primary ">
+                        <button href="#" class="btn btn-primary"><i class="fa fa-newspaper-o"></i> Education News</button>
+                    </ol>
                 </div>
-
-                <div class="col-xs-3 bs-wizard-step disabled"><!-- complete -->
-                    <div class="text-center bs-wizard-stepnum">Facts</div>
-                    <div class="progress"><div class="progress-bar"></div></div>
-                    <a href="#" class="bs-wizard-dot"></a>
-                    <div class="bs-wizard-info text-center"></div>
+                <div class="row">
+                    <hr class="hr-danger" />
+                    <ol class="breadcrumb bread-danger">
+                        <button href="#" class="btn btn-danger"><i class="fa fa-paw"></i> Entertainment</button>
+                    </ol>
                 </div>
-
-                <div class="col-xs-3 bs-wizard-step disabled"><!-- complete -->
-                    <div class="text-center bs-wizard-stepnum">Quiz</div>
-                    <div class="progress"><div class="progress-bar"></div></div>
-                    <a href="#" class="bs-wizard-dot"></a>
-                    <div class="bs-wizard-info text-center"></div>
+                <div class="row">
+                    <hr class="hr-success" />
+                    <ol class="breadcrumb bread-success">
+                        <button href="#" class="btn btn-success"><i class="fa fa-life-ring"></i> Sports</button>
+                    </ol>
                 </div>
-
-                <div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
-                    <div class="text-center bs-wizard-stepnum">Report</div>
-                    <div class="progress"><div class="progress-bar"></div></div>
-                    <a href="#" class="bs-wizard-dot"></a>
-                    <div class="bs-wizard-info text-center"></div>
+                <div class="row">
+                    <hr class="hr-warning" />
+                    <ol class="breadcrumb bread-warning">
+                        <button href="#" class="btn btn-warning"><i class="fa fa-facebook-square"></i> Social Network</button>
+                    </ol>
                 </div>
             </div>
-        </div>
-        <div class="carousel slide" id="carousel-649056">
+            <div class="col-md-10 column">
+                <br>
+                <br>
+                <div class="carousel slide" id="carousel-649056">
             <ol class="carousel-indicators">
                 <li class="active" data-slide-to="0" data-target="#carousel-649056">
                 </li>
@@ -115,18 +159,11 @@
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
-                    <img alt="" src="Image/youth1.jpg" />
-                    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@1walter2?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Johann Walter Bantz"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Johann Walter Bantz</span></a>
+                    <img alt="" src="Image/youth4.jpg" />
+                    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://pixabay.com/en/back-to-school-abc-training-2629361/" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Johann Walter Bantz"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Stefan Schweihofer</span></a>
                     <div class="carousel-caption">
-                        <h1>
-                            Don't let these kids go
-                        </h1>
-                        <h2>
-                            On any given night in Australia 1 in 200 people are homeless.
-                            There are 17,845 children under 10, with 402 children sleeping out.
-                        </h2>
                         <p>
-                            <a class="btn btn-primary btn-large" href="Views/FactsGrid.html">Learn more</a>
+                            <a class="btn btn-primary btn-large" href="Views/FactsGrid.html">Explore Our Services</a>
                         </p>
                     </div>
                 </div>
@@ -134,9 +171,8 @@
                     <img alt="" src="Image/youth2.jpg" />
                     <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@1walter2?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Johann Walter Bantz"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Johann Walter Bantz</span></a>
                     <div class="carousel-caption">
-                        <h4>
-                        </h4>
                         <p>
+                            <a class="btn btn-primary btn-large" href="Views/FactsGrid.html">Explore Our Services</a>
                         </p>
                     </div>
                 </div>
@@ -144,31 +180,13 @@
                     <img alt="" src="Image/youth3.jpg" />
                     <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@1walter2?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Johann Walter Bantz"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Johann Walter Bantz</span></a>
                     <div class="carousel-caption">
-                        <h4>
-                        </h4>
                         <p>
+                            <a class="btn btn-primary btn-large" href="Views/FactsGrid.html">Explore Our Services</a>
                         </p>
                     </div>
                 </div>
             </div> <a class="left carousel-control" href="#carousel-649056" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-649056" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
         </div>
-        <div class="row clearfix">
-            <div class="col-md-2 column">
-            </div>
-            <div class="col-md-2 column">
-            </div>
-            <div class="col-md-2 column">
-            </div>
-            <div class="col-md-2 column">
-            </div>
-            <div class="col-md-2 column">
-            </div>
-            <div class="col-md-2 column">
-                <span class="label label-default"> ©Team Y-Nots</span>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="https://github.com/MonashIE2017S2/thesecondhome" class="fa fa-github"></a>
-                <a href="#" class="fa fa-instagram"></a>
             </div>
         </div>
     </div>
